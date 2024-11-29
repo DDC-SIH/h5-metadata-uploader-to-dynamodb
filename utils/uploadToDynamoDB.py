@@ -36,5 +36,3 @@ def upload_to_dynamodb(json_file_path, table_name, region_name='ap-south-1'):
     table.put_item(Item=processed_data)
 
     print(f"Processed data from {json_file_path} has been uploaded to {table_name} table.")
-
-
