@@ -1,0 +1,63 @@
+{
+    "Acquisition_Date": "12JUN2024",
+    "Acquisition_End_Time": "12-JUN-2024T08:57:00",
+    "Acquisition_Start_Time": "12-JUN-2024T08:30:09",
+    "Acquisition_Time_in_GMT": "0830",
+    "Attitude_Source": "STAR",
+    "Datum": "WGS84",
+    "Ellipsoid": "WGS84",
+    "FastScan_Linearity_Enabled": "no",
+    "Ground_Station": "BES,SAC/ISRO,Ahmedabad,INDIA.",
+    "HDF_Product_File_Name": "3DIMG_12JUN2024_0830_L1C_ASIA_MER_V01R00.h5",
+    "Imaging_Mode": "FULL FRAME",
+    "Nominal_Altitude(km)": [
+        36000.0
+    ],
+    "Nominal_Central_Point_Coordinates(degrees)_Latitude_Longitude": [
+        0.0,
+        82.0
+    ],
+    "Observed_Altitude(km)": [
+        35789.91998
+    ],
+    "Output_Format": "hdf5-1.8.8",
+    "Processing_Level": "L1C",
+    "Product_Creation_Time": "2024-06-12T14:53:32",
+    "Product_Type": "SECTOR",
+    "Radiometric_Calibration_Type": "LAB CALIBRATED",
+    "Sat_Azimuth(Degrees)": [
+        89.381157
+    ],
+    "Sat_Elevation(Degrees)": [
+        89.862579
+    ],
+    "Satellite_Name": "INSAT-3D",
+    "Sensor_Id": "IMG",
+    "Sensor_Name": "IMAGER",
+    "SlowScan_Linearity_Enabled": "no",
+    "Software_Version": "1.0",
+    "Station_Id": "BES",
+    "Sun_Azimuth(Degrees)": [
+        308.592468
+    ],
+    "Sun_Elevation(Degrees)": [
+        50.882961
+    ],
+    "Unique_Id": "3DIMG_12JUN2024_0830_ASIA_MER",
+    "conventions": "CF-1.6",
+    "institute": "BES,SAC/ISRO,Ahmedabad,INDIA.",
+    "left_longitude": [
+        44.5
+    ],
+    "lower_latitude": [
+        -10.0
+    ],
+    "right_longitude": [
+        105.5
+    ],
+    "source": "BES,SAC/ISRO,Ahmedabad,INDIA.",
+    "title": "3DIMG_12JUN2024_0830_ASIA_MER_L1C",
+    "upper_latitude": [
+        45.5
+    ]
+}
