@@ -64,7 +64,7 @@ def validate_data(data):
             raise ValueError(f"Found empty or None attribute name: '{key}'")
     return True
 
-def upload_to_dynamodb(json_file_path, table_name, region_name='ap-south-1'):
+def upload_to_dynamodb(data, table_name, region_name='ap-south-1'):
     # Initialize a session using Amazon DynamoDB
     session = boto3.Session(
         region_name=region_name,
@@ -75,8 +75,8 @@ def upload_to_dynamodb(json_file_path, table_name, region_name='ap-south-1'):
     table = dynamodb.Table(table_name)
     
     # Read the JSON file
-    with open(json_file_path, 'r') as f:
-        data = json.load(f, parse_float=Decimal)  # Convert floats to Decimals
+    # with open(json_file_path, 'r') as f:
+    #     data = json.load(f, parse_float=Decimal)  # Convert floats to Decimals
 
     # Process the JSON data
     processed_data = process_json(data)
@@ -94,6 +94,6 @@ def upload_to_dynamodb(json_file_path, table_name, region_name='ap-south-1'):
     # Upload the item to DynamoDB
     try:
         table.put_item(Item=processed_data)
-        print(f"Processed data from {json_file_path} has been uploaded to {table_name} table.")
+        print(f"Processed data has been uploaded to {table_name} table.")
     except Exception as e:
         print(f"Error uploading to DynamoDB: {e}")
